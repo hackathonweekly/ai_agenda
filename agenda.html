@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>周周黑客松活动安排表</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 1.2cm;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 0 10px;
+            font-size: 11.5px;
+            line-height: 1.3;
+            background: white;
+        }
+        .header { 
+            background-color: #663399; 
+            color: white; 
+            padding: 10px;
+            margin-bottom: 8px; 
+            text-align: center;
+            page-break-before: avoid;
+            position: relative;
+        }
+        .logo {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 45px;
+        }
+        h1 { font-size: 20px; margin: 0; padding: 3px 0; }
+        h3 { font-size: 15px; margin: 0; padding: 3px 0; }
+        p { margin: 3px 0; }
+        
+        .info-section {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 6px;
+        }
+        .basic-info {
+            flex: 2;
+            border: 1px solid #000;
+            padding: 6px;
+            line-height: 1.3;
+        }
+        .community-intro {
+            flex: 1;
+            background: #f8f8f8;
+            padding: 6px;
+            border-left: 3px solid #663399;
+        }
+
+        .highlights {
+            background: #fff1f8;
+            padding: 6px;
+            margin: 6px 0;
+            border-left: 3px solid #663399;
+        }
+        .highlights h3 {
+            color: #663399;
+            margin: 0 0 4px 0;
+            font-size: 12px;
+        }
+        .highlights p {
+            margin: 3px 0;
+            padding-left: 8px;
+            font-size: 11px;
+        }
+
+        table { 
+            border-collapse: collapse; 
+            width: 100%; 
+            margin-bottom: 8px;
+            page-break-inside: avoid;
+        }
+        th, td { 
+            border: 1px solid #000; 
+            padding: 4px 5px;
+            font-size: 11px;
+            vertical-align: top;
+        }
+        .section { 
+            background-color: #663399; 
+            color: white;
+        }
+        .section-title { 
+            background-color: #663399; 
+            color: white; 
+            padding: 4px 6px;
+            margin: 6px 0 3px 0;
+            font-size: 12px;
+        }
+
+        .time-rules { 
+            background-color: #f0f0f0; 
+            padding: 4px;
+            margin: 6px 0; 
+            font-size: 10px;
+        }
+
+        .two-column {
+            display: flex;
+            gap: 8px;
+            margin: 6px 0;
+        }
+        .two-column > * {
+            flex: 1;
+        }
+
+        @media print {
+            .page-break {
+                page-break-before: always;
+            }
+            body {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="public/logo-cross-white.png" alt="Logo" class="logo">
+        <div>
+            <h1>HackathonWeekly 周周黑客松</h1>
+            <h3>AI 3D艺术创作坊（深圳）| 创造并打印你的专属饰品和文创周边</h3>
+            <p>一起穿越维度！</p>
+        </div>
+    </div>
+
+    <div class="info-section">
+        <div class="basic-info">
+            <strong>时间：</strong>2024年11月23日（周六）13:00-18:00<br>
+            <strong>地点：</strong>深圳市南山区科创学院4楼<br>
+            <strong>好物：</strong>现场10台3D打印机等你来玩～<br>
+            <strong>场地合作方：</strong>深圳科创学院<br>
+            <strong>赞助方：</strong>DeepTech<br>
+            <strong>合作伙伴：</strong>BaysWork / 深圳706 / dreamtech
+        </div>
+        <div class="community-intro">
+            <strong>社区介绍：</strong><br>
+            HackathonWeekly周周黑客松是一个公益开源的极客社区，定期举办交流会和黑客松，旨在帮助每个参与者实现最小可行产品。来周周黑客松，让想法落地！
+        </div>
+    </div>
+
+    <div class="highlights">
+        <h3>💝 想送什么礼物？</h3>
+        <p>送给自己：独特的个性配饰？装饰你的小天地？</p>
+        <p>送给朋友：创意十足的趣味摆件？实用的桌面神器？</p>
+        <p>送给TA：专属定制的浪漫信物？充满心意的生活小物？</p>
+        <p>今天，让我们用3D打印把温暖的心意变成真实的礼物～</p>
+    </div>
+
+    <!-- <h3 class="section-title">🎯 精彩日程</h3> -->
+    <table>
+        <tr class="section">
+            <th width="20%">时间</th>
+            <th width="45%">活动内容</th>
+            <th width="15%">时长/m</th>
+            <th width="20%">负责人</th>
+        </tr>
+        <tr>
+            <td>13:00-14:00</td>
+            <td>签到、自由交流、现场安排打印机预约。</td>
+            <td>30</td>
+            <td>林花钱</td>
+        </tr>
+        <tr>
+            <td>14:00-14:05</td>
+            <td>温暖开场</td>
+            <td>5</td>
+            <td>林子聪</td>
+        </tr>
+        <tr>
+            <td>14:05-14:15</td>
+            <td>路演经验技巧&艺术出海经验分享</td>
+            <td>10</td>
+            <td>徐碩彥</td>
+        </tr>
+        <tr>
+            <td>14:15-14:25</td>
+            <td>三维动态影像与AI辅助设计分享</td>
+            <td>10</td>
+            <td>王裕Freyr</td>
+        </tr>
+        <tr>
+            <td>14:25-14:35</td>
+            <td>人人皆可为3D创作者主题分享</td>
+            <td>10</td>
+            <td>决明子</td>
+        </tr>
+        <tr>
+            <td>14:35-14:45</td>
+            <td>用3D打印快速做结构和ID验证</td>
+            <td>10</td>
+            <td>邹宇</td>
+        </tr>
+        <tr>
+            <td>14:45-15:45</td>
+            <td>茶歇 + AI建模基础与实践工作坊</td>
+            <td>60</td>
+            <td>技术导师</td>
+        </tr>
+        <tr>
+            <td>15:45-16:45</td>
+            <td>3D打印机调试与优化实践</td>
+            <td>60</td>
+            <td>工程师</td>
+        </tr>
+        <tr>
+            <td>16:45-17:45</td>
+            <td>作品展示与交流</td>
+            <td>60</td>
+            <td>全体</td>
+        </tr>
+        <tr>
+            <td>17:45-18:00</td>
+            <td>收获满满，期待再见</td>
+            <td>15</td>
+            <td>林子聪</td>
+        </tr>
+    </table>
+
+    <div class="two-column">
+        <div>
+            <h3 class="section-title">活动角色</h3>
+            <table>
+                <tr>
+                    <th>角色</th>
+                    <th>负责人</th>
+                </tr>
+                <tr>
+                    <td>活动主理人</td>
+                    <td>Wingo、林子聪、余、jackiexiao</td>
+                </tr>
+                <tr>
+                    <td>主持人</td>
+                    <td>林子聪</td>
+                </tr>
+                <tr>
+                    <td>签到接待组</td>
+                    <td>林花钱</td>
+                </tr>
+                <tr>
+                    <td>技术支持组</td>
+                    <td>jackiexiao</td>
+                </tr>
+                <tr>
+                    <td>记录摄影组</td>
+                    <td>Wingo</td>
+                </tr>
+                <tr>
+                    <td>计时员</td>
+                    <td>林花钱</td>
+                </tr>
+                <tr>
+                    <td>物料管理员</td>
+                    <td>jackiexiao</td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h3 class="section-title">时间规则说明</h3>
+            <p style="margin-bottom: 10px;">我们会在每个环节时间快到的时候有告示牌（红绿黄牌），如果发言人超时，希望大家通过鼓掌的方式让环节结束。</p>
+            <table>
+                <tr>
+                    <th>时间</th>
+                    <th>绿牌</th>
+                    <th>黄牌</th>
+                    <th>红牌</th>
+                    <th>响铃</th>
+                </tr>
+                <tr>
+                    <td>3分钟及以内</td>
+                    <td>剩余1分钟</td>
+                    <td>30秒</td>
+                    <td>时间到</td>
+                    <td>超时15秒</td>
+                </tr>
+                <tr>
+                    <td>3-10分钟</td>
+                    <td>剩余2分钟</td>
+                    <td>1分钟</td>
+                    <td>时间到</td>
+                    <td>超时30秒</td>
+                </tr>
+                <tr>
+                    <td>10分钟及以上</td>
+                    <td>剩余5分钟</td>
+                    <td>2分钟</td>
+                    <td>时间到</td>
+                    <td>超时30秒</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <div class="two-column">
+        <div>
+            <h3 class="section-title">💌 温馨小贴士</h3>
+            <table>
+                <tr>
+                    <td>
+                        1. 用友善的态度交流，互相鼓励和支持～<br>
+                        2. 准时参与，一起享受创作的快乐<br>
+                        3. 提前预约打印机，我们随时帮忙<br>
+                        4. 记得拍照记录，分享你的创意时刻
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div style="margin-top: 15px;">
+        <div style="display: flex; gap: 18px; flex-wrap: wrap;">
+            <div style="flex-grow: 1; display: flex; gap: 18px;">
+                <!-- <div style="text-align: center;">
+                    <img src="public/ai-3d-doc.png" alt="3D打印活动二维码" style="width: 55px;">
+                    <div style="font-size: 10px; margin-top: 4px;">3D打印教程</div>
+                </div> -->
+                <div style="text-align: center;">
+                    <img src="public/handbook.jpg" alt="活动手册" style="width: 55px;">
+                    <div style="font-size: 10px; margin-top: 4px;">周周黑客松活动手册</div>
+                </div>
+            </div>
+            <div style="display: flex; gap: 18px; justify-content: flex-end;">
+                <div style="text-align: center;">
+                    <img src="public/feedback.png" alt="活动反馈表" style="width: 55px;">
+                    <div style="font-size: 10px; margin-top: 4px;">活动反馈表</div>
+                </div>
+                <div style="text-align: center;">
+                    <img src="public/wechat_official_qr.png" alt="微信公众号" style="width: 55px;">
+                    <div style="font-size: 10px; margin-top: 4px;">微信公众号</div>
+                </div>
+                <div style="text-align: center;">
+                    <img src="public/wechat_qr.jpg" alt="微信小助手" style="width: 55px;">
+                    <div style="font-size: 10px; margin-top: 4px;">微信小助手</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
